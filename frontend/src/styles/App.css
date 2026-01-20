@@ -1,0 +1,94 @@
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  background: radial-gradient(circle at top, #f1f5f9, #e2e8f0);
+  color: #0f172a;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px;
+}
+
+.app-header {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.app-eyebrow {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 12px;
+}
+
+.app-subtitle {
+  margin: 8px 0 0;
+  color: #cbd5f5;
+}
+
+.app-main {
+  display: grid;
+  gap: 24px;
+  max-width: 520px;
+}
+
+.login-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+  display: grid;
+  gap: 12px;
+}
+
+.login-label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.login-card input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #cbd5f5;
+  font-size: 14px;
+}
+
+.login-card button {
+  margin-top: 8px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #1d4ed8;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-card button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.form-error,
+.app-error {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.app-token {
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  word-break: break-all;
+}
